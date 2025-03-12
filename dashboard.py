@@ -6,7 +6,8 @@ import streamlit as st
 sns.set(style='dark')
 
 # Load data yang dibutuhkan
-air_df = pd.read_csv("air_df.csv")
+url_df = "https://drive.google.com/file/d/1bOac5gyltTxFWbSAGFZoEeLcJneJx5tI/view?usp=drive_link"
+air_df = pd.read_csv(url_df)
 air_df["datetime"] = pd.to_datetime(air_df["datetime"])
 
 # Sidebar untuk filter data sesuai keinginan
